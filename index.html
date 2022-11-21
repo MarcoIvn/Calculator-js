@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>app3</title>
+</head>
+<body>
+  <h1>Calculadora</h1>
+  <br>
+  <div class="calculator">
+    <div id="screen"></div>
+    <div class = "numButtons">
+      <button id="num0" onclick="setNum('num0')">0</button>
+      <button id="num1" onclick="setNum('num1')">1</button>
+      <button id="num2" onclick="setNum('num2')">2</button>
+      <button id="num3" onclick="setNum('num3')">3</button>
+      <br>
+      <button id="num4" onclick="setNum('num4')">4</button>
+      <button id="num5" onclick="setNum('num5')">5</button>
+      <button id="num6" onclick="setNum('num6')">6</button>
+      <button id="num7" onclick="setNum('num7')">7</button>
+      <br>
+      <button id="num8" onclick="setNum('num8')">8</button>
+      <button id="num9" onclick="setNum('num9')">9</button>
+      <button id="dot" onclick="setNum('dot')">.</button>
+    </div>
+    <div class="opButtons">
+      <button id="opSum" onclick="setOperation('opSum')">+</button>
+      <button id="opSubs" onclick="setOperation('opSubs')">-</button>
+      <button id="opMpy" onclick="setOperation('opMpy')">*</button>
+      <button id="opDiv" onclick="setOperation('opDiv')">/</button>
+      <br>
+      <button id="opPow" onclick="setOperation('opPow')"><img src="pow.png" alt="pow"></button>
+      <button id="opSqrt" onclick="setOperation('opSqrt')"><img src="sqrt.png" alt="sqrt"></button>
+      <button id="opRes" onclick="result()">=</button>
+    </div>
+    <script src="calculadora.js"></script>
+    <br>
+  </div>
+  <div class="reset-btn">
+    <button id="reset" onclick="reset()">Reset</button>
+  </div>
+  
+</body>
+</html>
